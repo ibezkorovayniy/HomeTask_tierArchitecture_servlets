@@ -21,7 +21,7 @@
     <div class="field">
         <a href="#" id="forgot">Forgot your password?</a>
         <label>Enter your password:</label>
-        <div class="input"><input type="password" name="password" /></div>
+        <div class="input"><input type="password" name="password"/></div>
     </div>
 
     <div class="submit">
@@ -29,6 +29,5 @@
     </div>
 
 </form>
-
 </body>
 </html>

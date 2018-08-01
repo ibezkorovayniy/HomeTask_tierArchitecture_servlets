@@ -12,7 +12,7 @@
 
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
-        <servlet-class>com.MyApp.web.FirstServlet</servlet-class>
+        <servlet-class>com.MyApp.web.MyServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -20,13 +20,13 @@
         <url-pattern>/servlet/*</url-pattern>
     </servlet-mapping>
 
-   <!-- <filter>
+   <filter>
         <filter-name>MainFilter</filter-name>
         <filter-class>com.MyApp.web.LoginFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>MainFilter</filter-name>
         <url-pattern>/servlet/*</url-pattern>
-    </filter-mapping>-->
+    </filter-mapping>
 
 </web-app>

@@ -42,7 +42,6 @@ public class UserServiceImpl implements UserService {
         }
         return Optional.empty();
     }
-
     @Override
     public User getUserByToken(String token) {
         return userDao.getUserByToken(token);

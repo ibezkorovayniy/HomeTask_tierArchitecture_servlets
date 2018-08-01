@@ -72,7 +72,6 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao {
             preparedStatement.setString(1, user.getToken());
             preparedStatement.setLong(2, user.getId());
             preparedStatement.executeUpdate();
-            //user = setUserParamentr(rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }

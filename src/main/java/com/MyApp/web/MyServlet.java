@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FirstServlet extends HttpServlet {
+public class MyServlet extends HttpServlet {
 
     private static final Map<Request, Controller> controllerMap = new HashMap<>();
 
@@ -86,45 +86,4 @@ public class FirstServlet extends HttpServlet {
     }
 }
 
-
-
-
-
-/*
-
-    private static final Map<Request, Controller> controllerMap = new HashMap<>();
-
-
-    public void init() {
-
-        controllerMap.put(new Request("/login", POST.toString()), Factory.getSomething(CreateUserController::new)
-                .compose(UserServiceImpl::new)
-                .compose(UserDaoImpl::new)
-                .apply(Factory.getConnection()));
-
-    }
-
-
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        processRequest(request, response);
-
-        Controller controller = controllerMap.get(request);
-
-        if(controller == null) {
-            request.getRequestDispatcher("/WEB-INF/error.jsp").forward(request, response);
-        }
-        ViewModel vm = controller.process(request, response);
-
-        forward(request, response, vm);
-
-
-    }
-
-    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException {
-        Request request1 = new Request(request.getRequestURI(), request.getMethod());
-
-
-    }
-
-*/
 
